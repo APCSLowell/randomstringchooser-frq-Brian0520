@@ -4,11 +4,11 @@ public class RandomStringChooser
 private ArrayList<String> arr;
 public RandomStringChooser(String[] myArr){
   arr = new ArrayList<String>();
-  for(int i = 0; i < myArray; i++)
-    arr.add(myArray(i));
+  for(int i = 0; i < myArr.length; i++)
+    arr.add(myArr(i));
 }
 public String getNext(){
-  if(words.size() == 0)
+  if(arr.size() == 0)
     return "NONE";
   int i = (int)(Math.random() * arr.size());
   return arr.remove(i);
