@@ -4,8 +4,8 @@ public class RandomStringChooser
 private ArrayList<String> arr;
 public RandomStringChooser(String[] myArr){
   arr = new ArrayList<String>();
-  for(int i = 0; i < myArr.length; i++)
-    arr.add(myArr(i));
+  for(String a : myArr)
+    arr.add(a);
 }
 public String getNext(){
   if(arr.size() == 0)
